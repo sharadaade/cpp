@@ -8,11 +8,15 @@ int main(void)
     {
         for(j=1;j<=5;j++)
         {
-            if(i<=1)
+            if(i==1 || j==5)
             {
                 cout<<"*";
             }
-            cout<<endl;
+            else
+            {
+                cout<<" ";
+            }
         }
+            cout<<endl;
     }
 }
