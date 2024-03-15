@@ -33,10 +33,10 @@ int main(void)
 {
 
     int size;
-    cout<<"\nEnter the size of student : "<<endl;
-    cin>>size;
+    cout << "\nEnter the size of student : " << endl;
+    cin >> size;
     Student *s;
-    s= (Student*)malloc(sizeof(Student)*size);
+    s = (Student *)malloc(sizeof(Student) * size);
     int rno, per;
     char name[90];
 
@@ -52,6 +52,6 @@ int main(void)
         int rno = s[i].getRno();
         char *name = s[i].getName();
         int per = s[i].getPer();
-        cout<<rno<<"\t"<<name<<"\t"<<per<<"\n";
+        cout << rno << "\t" << name << "\t" << per << "\n";
     }
 }

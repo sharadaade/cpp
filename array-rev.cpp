@@ -31,7 +31,4 @@ int main(void)
     {
         cout<<a[i]<<" ";
     }
-    
-    
-    
 }
