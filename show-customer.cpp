@@ -44,9 +44,9 @@ public:
     {
         this->c = ct;
     }
-    void showProduct(int size)
+    void showProduct()
     {
-        for (int i = 0; i < size; i++)
+        for (int i = 0; i < 3; i++)
         {
             cout << "\n"<< c[i].getId() << "\t" << c[i].getName() << "\t" << c[i].getCont();
         }
@@ -54,24 +54,25 @@ public:
 };
 int main(void)
 {
-    int size;
-    cout << "\nEnter the size of product : ";
-    cin >> size;
-    //Customer *ct = (Customer *)malloc(sizeof(Customer) * size);
-    Product *p = (Product *)malloc(sizeof(Product) * size);
+    // int size;
+    // cout << "\nEnter the size of product : ";
+    // cin >> size;
+    // Customer *ct = (Customer *)malloc(sizeof(Customer) * size);
+    // Product *p = (Product *)malloc(sizeof(Product) * size);
+    Customer c[3];
+    Product p;
     int id;
     char name[50];
     char cont[10];
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < 3; i++)
     {
         cout << "\nEnter the id name contact : ";
-        // _flushall();
-        cin >> id;
-        // _flushall();
-        gets(name);
-        // _flushall();
-        gets(cont);
-        
+        cin>>id>>name>>cont;
+        c[i].setId(id);
+        c[i].setName(name);
+        c[i].setCont(cont);
+
     }
-    p->showProduct(size);
+    p.addProduct(c);
+    p.showProduct();
 }

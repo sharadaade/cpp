@@ -57,6 +57,7 @@ class All
     {
         emp = e;
     }
+    
 };
 int main(void)
 {
